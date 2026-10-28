@@ -1,0 +1,65 @@
+C. Cuadrado mágico
+time limit per test1 second
+memory limit per test256 megabytes
+Marco está armando un cuadrado mágico de 3×3
+: una cuadrícula con los dígitos del 1
+ al 9
+, cada uno usado exactamente una vez, tal que las tres filas, las tres columnas y las dos diagonales suman lo mismo. (Con estos dígitos, esa suma es siempre 15
+.)
+
+Algunas casillas ya tienen un dígito puesto y no se pueden cambiar; las demás están vacías. Cuenta de cuántas formas se pueden llenar las casillas vacías para obtener un cuadrado mágico.
+
+Input
+Cada una de las 3
+ líneas contiene 3
+ enteros entre 0
+ y 9
+: el contenido de la cuadrícula, donde 0
+ indica una casilla vacía. Los dígitos que no son 0
+ son distintos entre sí.
+
+Output
+Imprime un único entero: la cantidad de cuadrados mágicos que se pueden obtener llenando las casillas vacías.
+
+Scoring
+Límites
+
+Este problema tiene subtareas, por lo cual es posible obtener un puntaje en base a las subtareas que logren ser resueltas.
+
+La cuadrícula es de 3×3
+.
+Cada valor está entre 0
+ y 9
+, y los valores distintos de 0
+ son distintos entre sí.
+Grupo 1 (1 punto)
+
+Al menos 8
+ casillas con dígito
+Grupo 2 (1 punto)
+
+Al menos 3
+ casillas con dígito
+Grupo 3 (2 puntos)
+
+Sin restricciones adicionales.
+Examples
+InputCopy
+2 0 0
+0 0 0
+0 0 0
+OutputCopy
+2
+InputCopy
+4 9 2
+3 5 7
+8 1 6
+OutputCopy
+1
+Note
+Con la esquina superior izquierda en 2
+ solo hay dos cuadrados mágicos posibles: el 276/951/438
+ y su reflejo 294/753/618
+. En el segundo ejemplo la cuadrícula completa ya es un cuadrado mágico, y hay una sola forma de "llenar" (ninguna casilla).
+
+

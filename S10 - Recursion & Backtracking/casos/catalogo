@@ -1,0 +1,33 @@
+Si el enunciado dice…	Plantilla
+“cada elemento entra o no entra”, “subconjuntos”, “suma exacta”	1
+“ordenar”, “permutar”, “todos los órdenes”	2
+“cadena de longitud n”, cada posición elige un símbolo, con una regla	3
+“repartir entre k personas/grupos/colores”	4
+“partir n en partes”, “elegir un tamaño”	5
+“cuadrícula”, “caminos”, “no repetir casillas”	6
+“colocar piezas sin atacarse”, “tablero”, “completar”	7
+“elegir k de n”	8
+el problema se define a sí mismo en versión más chica (Hanói, expresión prefija)	9 
+
+
+#	Caso	Plantilla
+1	Subconjuntos de n	1
+2	Suma exacta / Pago Exacto (sin repetir elemento)	1
+3	Contar subconjuntos con suma T	1
+4	Dividir en 2 grupos con diferencia mínima	4 (k = 2)
+5	Mochila 0/1 con n chico	1
+6	Permutaciones	2
+7	Permutaciones con letras repetidas	2 (con cuenta[])
+8	Asignar n tareas a n personas	2
+9	Cadenas binarias sin 11	3
+10	Contraseñas sin letras iguales seguidas	3
+11	Paréntesis balanceados	3 (ab, ce)
+12	Mudanza (n cajas, 3 personas)	4
+13	Colorear un grafo con k colores	4
+14	Partir en k grupos de igual suma	4
+15	Repartos de caramelos / particiones de n	5
+16	Pagar con monedas ilimitadas	5 (variante)
+17	Laberinto / Word Search	6
+18	N reinas con obstáculos	7
+19	Sudoku	7 (bool)
+20	Combinaciones C(n, k)	8
