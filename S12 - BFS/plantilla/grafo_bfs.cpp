@@ -191,6 +191,26 @@ public:
         }
         return c;
     }
+
+    vector<int> distanciasMultiples(const vector<int>& fuentes) {
+        vector<int> d(n + 1, -1);
+        queue<int> q;
+        for (int s : fuentes) {
+            d[s] = 0;
+            q.push(s);
+        }
+        while (!q.empty()) {
+            int u = q.front();
+            q.pop();
+            for (int v : listaAdy[u])
+                if (d[v]==-1) {
+                    d[v] = d[u] + 1;
+                    q.push(v);
+                }
+        }
+        return d;
+    }
+    
 };
 
 vector<pair<int,int>> vecinosGrilla(int f, int c, int R, int C, const vector<string>& g) {
@@ -222,9 +242,3 @@ vector<vector<int>> bfsGrilla(int f, int c, int R, int C, const vector<string>& 
     return d;
 }
 
-
-
-int main() {
-    
-    return 0;
-}
