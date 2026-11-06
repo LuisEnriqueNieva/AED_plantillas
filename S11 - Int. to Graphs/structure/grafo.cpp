@@ -174,14 +174,3 @@ vector<pair<int,int>> vecinosGrilla(int f, int c, int R, int C, const vector<str
     return r;
 }
 
-int main() {
-    int n, m;
-    cin>>n>>m;
-    Grafo g(n, false);
-    for (int i=0;i<m;i++) {
-        int u, v;
-        cin>>u>>v;
-        g.agregarArista(u, v);
-    }
-    return 0;
-}
